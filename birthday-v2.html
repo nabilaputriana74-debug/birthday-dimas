@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Sweet Seventeen</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(180deg,#07152F,#0d234d);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+color:white;
+}
+
+.card{
+width:100%;
+max-width:700px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+padding:35px;
+border-radius:25px;
+box-shadow:0 0 25px rgba(255,255,255,.1);
+}
+
+.page{
+display:none;
+animation:fade .6s;
+}
+
+.page.active{
+display:block;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+h1{
+font-size:38px;
+margin-bottom:10px;
+text-align:center;
+}
+
+h2{
+text-align:center;
+font-weight:normal;
+margin-bottom:20px;
+}
+
+p{
+line-height:1.8;
+font-size:17px;
+}
+
+button{
+margin-top:30px;
+padding:14px 35px;
+border:none;
+border-radius:50px;
+font-size:17px;
+cursor:pointer;
+background:white;
+color:#07152F;
+font-weight:bold;
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+img{
+width:100%;
+border-radius:18px;
+margin:20px 0;
+}
+
+</style>
+
+</head>
+
+<body>
+<div id="lockscreen" style="
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#07152F;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+">
+
+<div style="text-align:center;max-width:300px;">
+
+<h2>🔒 Secret Page</h2>
+
+<p>Enter the password first.</p>
+
+<input
+id="password"
+type="password"
+placeholder="Password..."
+style="
+padding:12px;
+width:90%;
+border-radius:10px;
+border:none;
+margin:10px 0;
+">
+
+<br>
+
+<button onclick="checkPassword()">
+Open 🤍
+</button>
+
+<p id="error" style="color:#ff8080;"></p>
+
+</div>
+
+</div>
+<div class="card">
+
+<!-- PAGE 1 -->
+<div id="page1" class="page active">
+
+<h1>🎉Happy Sweet Seventeen 🤍</h1>
+
+<h2>Dimas Rangga Putra Ahmad</h2>
+
+<p style="text-align:center;">
+Someone made this little page just for you.
+</p>
+
+<button onclick="showPage('page2')">
+Open Letter 💌
+</button>
+
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+
+<h1>Happy Sweet Seventeen 🎉‼️</h1>
+
+<p>
+
+<video controls width="100%" style="border-radius:15px; margin-top:20px;">
+    <source src="hbd.mp4" type="video/mp4">
+</video>
+
+finally you're 17!! happy birthday, mas 
+
+semoga di umur yang baru ini kamu selalu sehat, bahagia, dan semua yang lagi kamu usahain bisa berjalan dengan lancar. i hope this year brings you lots of good things, new opportunities, and even more reasons to smile.😼🔥
+
+<br><br>
+
+thank you for always being there, for listening to all my random stories, and for making even the most random conversations so much fun. i really appreciate everything, more than you know.👀‼️
+
+<br><br>
+
+17 is a new chapter, so i hope it'll be a good one for you. semoga kamu ketemu banyak hal baik, makin banyak pengalaman seru, dan semoga semua doa yang masih kamu simpan pelan-pelan dikabulin yaps.
+
+<br><br>
+
+and... i hope we'll keep sharing random stories, laughing at stupid things, annoying each other a little, and making more good memories together.👫✨
+
+<br><br>
+
+once again, happy birthday, mas. enjoy your special day, don't forget to smile, and have the best birthday.🎉
+
+<br><br>
+
+— for dimas rangga putra ahmad 🤍
+
+</p>
+
+<button onclick="showPage('page3')">
+Our First Chapter 📸
+</button>
+
+</div>
+
+<!-- PAGE 3 -->
+<div id="page3" class="page">
+
+<h1>Our First Chapter </h1>
+
+<p style="text-align:center;">
+Everything started from a simple conversation...
+</p>
+<br><br>
+📍Our First Chat 💬
+<img src="firstchat.jpg" width="100%">
+
+<p>
+<p>
+this was where everything started. our first chat...👀‼️
+<br><br>
+waktu itu kita literally belum kenal satu sama lain. we were just two strangers, no expectations, no clue kalau ternyata kita bakal sejauh ini. honestly, aku juga ga pernah nyangka bakal seakrab ini sama kamu.
+<br><br>
+awalnya aku cuma mau minta tolong kamu nemenin aku ke tempat UCL, karena aku sendirian dan bener-bener ga tau jalan. that's it. aku pikir itu cuma bakal jadi satu chat biasa yang selesai setelah urusan aku selesai.
+<br><br>
+but what surprised me the most was how kind you were. aku ga nyangka respon kamu bakal sebaik itu ke aku, padahal waktu itu kita masih orang asing. dari cara kamu ngobrol, cara kamu ngerespon, sampai hal-hal kecil yang kamu lakuin, semuanya bikin aku ngerasa kalau kamu orang yang baik.
+<br><br>
+looking back now, it's crazy how one simple message became the beginning of everything.
+</p>
+</p>
+
+<br><br>
+📍Our First Photo Together 📸
+<img src="first fotbar.jpg">
+<p><em>disclaimer: si bro literally baru aja selesai nangis...</em></p>
+<br><br>
+<p><strong>honestly, i didn't expect we'd have our first photo together that day.</strong></p>
+<br><br>
+<p>
+awalnya malah temen aku yang nyuruh kita foto bareng. pas dia ngomong gitu aku langsung kayak, "hah, serius?" jujur aja, aku juga gak expect bakal ngajak kamu foto.
+</p>
+<br><br>
+<p>
+but since the opportunity was right there, i thought... why not? yaudah, akhirnya aku memberanikan diri buat ngajak kamu foto. and to my surprise, you said yes right away. gak pake harus diledekin dulu, gak pake disuruh berkali-kali. kamu langsung berdiri di samping aku.
+</p>
+<br><br>
+<p>
+terus aku masih inget banget, peci kamu waktu itu agak ke belakang jadi rambutnya masih kelihatan. aku bilang, "coba benerin pecinya dulu." and you actually did it. langsung dibenerin. sampe sekarang aku masih bingung, waktu itu kamu emang nurut aja, atau masih sungkan sama aku karena kita baru kenal. hahaha.
+</p>
+<br><br>
+<p>
+anyway, thank you for saying yes. who would've thought this simple picture would become the first of so many photos we'd take together?😺
+</p>
+<br><br>
+
+<button onclick="showPage('page4')">
+More 🎵
+</button>
+
+</div>
+<div id="page4" class="page">
+
+<h1>🎵 A Little Playlist For You‼️</h1>
+
+<p style="text-align:center;">
+just a few songs for you. who knows, maybe you'll like some of them. 🎧🤍
+</p>
+</a>
+<a href="https://open.spotify.com/track/1RMJOxR6GRPsBHL8qeC2ux" target="_blank">
+    <button>🎵 Best Part</button>
+</a>
+<a href="https://open.spotify.com/track/2ezMnGfGww3WSOJp7TwI1N" target="_blank">
+    <button>🎵 Blue — yung kai</button>
+</a>
+<a href="https://open.spotify.com/track/0T5iIrXA4p5GsubkhuBIKV" target="_blank">
+    <button>🎵 Until I Found You</button>
+</a>
+<a href="https://open.spotify.com/track/4y5bvROuBDPr5fuwXbIBZR" target="_blank">
+    <button>🎵 Paper Rings</button>
+</a>
+</p>
+
+<br><br>
+
+<button onclick="showPage('page5')">
+One Last Thing... 🤍
+</button>
+
+</div>
+<div id="page5" class="page">
+
+<h1>One Last Thing...🤍</h1>
+
+<p style="text-align:left; line-height:2;">
+
+before you leave...
+
+<br><br>
+
+i just want you to know that meeting you was one of the best things that happened to me.
+
+<br><br>
+
+thank you for every conversation, every laugh, every random moment, and every memory we've made together.
+
+<br><br>
+
+happy sweet seventeen once again, mas.
+
+<br><br>
+
+see you in our next memories.
+
+<br><br>
+
+— bibil 
+
+</p>
+
+<br><br>
+
+<button onclick="showPage('page1')">
+Read Again 🔄
+</button>
+
+</div>
+</div>
+
+<script>
+
+function showPage(id){
+
+document.querySelectorAll(".page").forEach(page=>{
+page.classList.remove("active");
+});
+
+document.getElementById(id).classList.add("active");
+
+}
+function checkPassword(){
+
+let pass = document.getElementById("password").value;
+
+if(pass=="27"){
+  
+document.getElementById("lockscreen").style.display="none";
+
+}else{
+
+document.getElementById("error").innerHTML="Wrong password!😾";
+
+}
+
+}
+</script>
+
+</body>
+</html>
